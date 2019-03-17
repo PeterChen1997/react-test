@@ -4,6 +4,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+Sentry.init({
+ dsn: "https://afb8a50a4f82434ea2124814a82f4042@sentry.io/1417175"
+});
+// should have been called before using it here
+// ideally before even rendering your react app 
+
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

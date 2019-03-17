@@ -19,6 +19,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <button onClick={() => { throw new Error('test') }}>throw error</button>
         </header>
       </div>
     );
